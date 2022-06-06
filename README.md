@@ -13,5 +13,17 @@
 10) choose bootcamp session
 11) choose project to install
 
+### How to use opspark tool to test projects
+1) in terminal, type => os test
+2) select bootcamp session
+3) select project
+
+### How to use opspark took to submit projects
+1) in terminal, type => os submit
+2) select bootcamp session
+3) select project to submit
+
 ### How to push work to github
-1) in terminal, type = git add -A
+1) in terminal, type => git add -A
+2) in terminal, type => git commit -m "description in quotes"
+3) in terminal, type => git push
