@@ -14,9 +14,9 @@
  */
 function length(string) {
     // YOUR CODE BELOW HERE //
-    // return input string's length property
-    return string.length;
-
+    
+    // return the length of the input string using the length property
+    return string;
 
     // YOUR CODE ABOVE HERE //
 }
@@ -159,7 +159,7 @@ function longest(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
-function sortAscending(stringOne, stringTwo) {
+function sortAscending(stringOne, stringTwo) { 
     // YOUR CODE BELOW HERE //
 
 

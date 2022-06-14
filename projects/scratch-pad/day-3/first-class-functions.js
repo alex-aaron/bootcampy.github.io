@@ -13,10 +13,10 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+    return function(value){
+        // determine if the value is greater than base
+        return value > base;
+    }
     // YOUR CODE ABOVE HERE //
 }
 
@@ -69,7 +69,7 @@ function createEndsWithFilter(endsWith) {
  * TIP: You need to loop over the Strings, right? We need to pass each String to 
  * the modify Function, but we need to collect the results into some collection.
  */
-function modifyStrings(strings, modify) {
+function modifyStrings(strings, modify) { // modify is a FUNCTION!!
     // YOUR CODE BELOW HERE //
     
     
@@ -87,11 +87,8 @@ function modifyStrings(strings, modify) {
  * 
  * TIP: You need to loop over the Strings, right? And pass them to the test?
  */
-function allStringsPass(strings, test) {
+ function allStringsPass(strings, test) { // test is a FUNCTION!
     // YOUR CODE BELOW HERE //
-    
-    
-    
     
     // YOUR CODE ABOVE HERE //
 }
