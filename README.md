@@ -27,3 +27,9 @@
 1) in terminal, type => git add -A
 2) in terminal, type => git commit -m "description in quotes"
 3) in terminal, type => git push
+
+### How to access lodown project
+1) in terminal, type => cd ..
+2) Click three horizontal lines in top left > Click
+
+### How to push changes for lodown
