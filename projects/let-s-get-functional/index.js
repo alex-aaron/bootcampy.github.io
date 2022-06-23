@@ -22,20 +22,8 @@ var _ = require('underbar');
  */
 
 var maleCount = function(array) {
-    // use the _.filter() method to return a new array of only the male customers
-    var males = _.filter(array, function(customer){
-        // return true if the input customer has a gender property of 'male'
-        if (customer.gender === 'male'){
-            return true;
-        } else {
-            return false;
-        }
-    }); // [ {male}, {male}, {male} ]
-    // return number of male customers
-    console.log(males.length);
-    return males.length;
-};
 
+};
 
 var femaleCount;
 
