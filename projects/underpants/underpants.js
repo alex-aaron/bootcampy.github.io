@@ -64,6 +64,9 @@ _.identity = function(value){
 *   _.first(["a", "b", "c"], 2) -> ["a", "b"]
 */
 
+_.first = function(array, num){
+    
+}
 
 /** _.last
 * Arguments:
@@ -133,6 +136,9 @@ _.identity = function(value){
 *      -> should log "a" "b" "c" to the console
 */
 
+_.each = function(array, func){
+    // code
+}
 
 /** _.unique
 * Arguments:
@@ -161,6 +167,9 @@ _.identity = function(value){
 *   use _.each in your implementation
 */
 
+_.filter = function(array, test){
+
+}
 
 /** _.reject
 * Arguments:
@@ -222,7 +231,20 @@ _.identity = function(value){
 *   2) You must use _.map() in your implementation.
 * Examples:
 *   _.pluck([{a: "one"}, {a: "two"}], "a") -> ["one", "two"]
+    // _.pluck([{ name: 'Bethany'}, { name: 'Zoe}], 'name');
 */
+
+_.pluck = function(array, prop){ // prop = 'a'
+    // invoking map on the input array
+    var result = _.map(array, function(element){ // element = { a: 'one' }
+        // return the value at the given prop for the current item
+        return element[prop];
+    });
+    return result;
+}
+
+
+
 
 
 /** _.every
@@ -245,6 +267,9 @@ _.identity = function(value){
 *   _.every([2,4,6], function(e){return e % 2 === 0}) -> true
 *   _.every([1,2,3], function(e){return e % 2 === 0}) -> false
 */
+
+
+
 
 
 /** _.some
@@ -288,6 +313,23 @@ _.identity = function(value){
 *   _.reduce([1,2,3], function(previousSum, currentValue, currentIndex){ return previousSum + currentValue }, 0) -> 6
 */
 
+_.reduce = function (array, func, seed){ // [1, 2, 3, 4]
+    // create output variable
+    var output;
+    // determine if seed was not passed in
+    if (seed === undefined){ 
+        output = array[0]; // 1
+        for (var i = 1; i < array.length; i++){
+            output = func(output, array[i], i, array); 
+        }
+    } else { // else it was passed in
+        output = seed; // output = 0
+        for (var i = 0; i < array.length; i++){
+            output = func(output, array[i], i, array); // output = 10
+        }
+    }
+    return output;
+};
 
 /** _.extend
 * Arguments:
@@ -303,6 +345,12 @@ _.identity = function(value){
 *   _.extend(data, {b:"two"}); -> data now equals {a:"one",b:"two"}
 *   _.extend(data, {a:"two"}); -> data now equals {a:"two"}
 */
+
+_.extend = function(target, ...objects){
+    // objects = [ {b: 2}, {c: 3} ]
+}
+
+// _.extend({ a: 1}, { b: 2 }, { c: 3 }); // => { a: 1, b: 2, c: 3 }
 
 //////////////////////////////////////////////////////////////////////
 // DON'T REMOVE THIS CODE ////////////////////////////////////////////
